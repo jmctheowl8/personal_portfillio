@@ -3,12 +3,12 @@ import About from './compoents/About/about.jsx';
 import Skills from './compoents/skills/skills.jsx';
 import Gallery from './compoents/gallery/gallery.jsx';
 import Contact from './compoents/contact/contact.jsx';
-import './global.css';  // Global styles imported here (less common)
 
 const App = () => {
   return (
     <div className="App">
-      < Navbar />
+      <h1>Welcome to My Test Page</h1>
+      <Navbar />
       <About />
       <Skills />
       <Gallery />
