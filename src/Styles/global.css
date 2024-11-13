@@ -3,14 +3,25 @@
     padding: 0;
     box-sizing: border-box;
   }
+  /* Additional global styles */
   
   body {
+    display: flex;
+    align-items: center;       /* Centers items vertically */
+    justify-content: center;   /* Centers items horizontally */
+    flex-direction: column;    /* Stacks items vertically */
+    height: 100vh;             /* Full viewport height */
+    margin: 0;                 /* Remove default body margin */
+    text-align: center;        /* Center-aligns text within the body */
     font-family: Arial, sans-serif;
-    background-color: blue;
+    background-color: #d1f283;
     color: #333;
-  }
-  
-  /* Additional global styles */
+    }
   h1, h2, h3 {
-    color: #333;
+     color: #116bab;
+  }
+  /* Ensure the image is responsive */
+  img {
+    max-width: 100%;           /* Prevents overflow on small screens */
+    height: auto;
   }

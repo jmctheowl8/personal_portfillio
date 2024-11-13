@@ -1,20 +1,15 @@
-import Navbar from './compoents/Navbar/Navbar.jsx';
-import About from './compoents/About/about.jsx';
-import Skills from './compoents/skills/skills.jsx';
-import Gallery from './compoents/gallery/gallery.jsx';
-import Contact from './compoents/contact/contact.jsx';
+
 
 const App = () => {
   return (
     <div className="App">
       <h1>Welcome to My Test Page</h1>
-      <Navbar />
-      <About />
-      <Skills />
-      <Gallery />
-      <Contact />
+      <p>How are you doing give glory to god?</p>
     </div>
   );
 };
-
+{/*
+   Each commpoent needs a export part to it without it even thought you have imported here you wont see anything that can even include the styles 
+   Looking at the code in the browser by inspection can help solve the issue 
+  */}
 export default App;
