@@ -1,1 +1,36 @@
- 
+/* Navbar styles */
+.navbar {
+    display: flex;                     /* Use flexbox to layout items */
+    justify-content: center;           /* Centers the navbar items horizontally */
+    align-items: center;               /* Vertically centers the content */
+    padding: 1.3rem 2rem;
+    background-color: #333;
+    color: #d1f283;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar list styling */
+  .navbar ul {
+    display: flex;                    /* Display navbar items side by side */
+    list-style: none;
+    gap: 20px;                        /* Space between the links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for navbar links */
+  .navbar a {
+    color: #d1f283;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #d1f283;
+  }

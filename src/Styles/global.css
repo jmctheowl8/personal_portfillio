@@ -1,27 +1,41 @@
+/* Reset for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  /* Additional global styles */
   
+  /* Body styling */
   body {
-    display: flex;
-    align-items: center;       /* Centers items vertically */
-    justify-content: center;   /* Centers items horizontally */
-    flex-direction: column;    /* Stacks items vertically */
-    height: 100vh;             /* Full viewport height */
-    margin: 0;                 /* Remove default body margin */
-    text-align: center;        /* Center-aligns text within the body */
     font-family: Arial, sans-serif;
     background-color: #d1f283;
     color: #333;
-    }
-  h1, h2, h3 {
-     color: #116bab;
+    margin: 0;
+    /* Flexbox is removed from the body */
+    display: block;
   }
+  
+  /* Container for centered content */
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 60px); /* Adjust for navbar height */
+    text-align: center;
+    padding-top: 60px; /* Adjust to avoid content being hidden behind navbar */
+  }
+  
+  /* Heading styles */
+  h1, h2, h3 {
+    color: #116bab;
+
+  }
+  
   /* Ensure the image is responsive */
   img {
-    max-width: 100%;           /* Prevents overflow on small screens */
+    max-width: 100%;
     height: auto;
   }
+  
+
