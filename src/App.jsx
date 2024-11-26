@@ -4,32 +4,37 @@ import About from "./compoents/About/about"
 const App = () => {
   return (
     <div className="App">
-      
       <div className="main-content">
-      
         <Navbar /> 
         <Hero />
-      <div className="wrapper">
-        <section id="About" >
-          <About />
-        </section>
-      </div>
+
+        <div className="wrapper">
+          <section id="About" >
+            <About />
+          </section>
+        </div>
+        
+        <div className="wrapper">
+          <section id="Skills">
+            <h1>Skills Section</h1>
+            <p>Learn more about us here.</p>
+          </section>
+        </div>
+        
+         <div className="wrapper">
+          <section id="gallery">
+            <h1>Gallrey  Section</h1>
+            <p>These are our services.</p>
+          </section>
+         </div>
+
+        <div className="wrapper">
+          <section id="contact">
+            <h1>Contact Section</h1>
+            <p>Contact us for more information.</p>
+          </section>
+        </div>
       
-      <div className="wrapper">
-        <section id="Skills">
-          <h1>Skills Section</h1>
-          <p>Learn more about us here.</p>
-        </section>
-      </div>
-      
-      <section id="gallery">
-        <h1>Gallrey  Section</h1>
-        <p>These are our services.</p>
-      </section>
-      <section id="contact">
-        <h1>Contact Section</h1>
-        <p>Contact us for more information.</p>
-      </section>
       </div>
     </div>
   );

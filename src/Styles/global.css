@@ -13,6 +13,7 @@
     margin: 0;
     /* Flexbox is removed from the body */
     display: block;
+    
   }
   
   /* Container for centered content */
@@ -33,9 +34,7 @@
   }
   
   /* Ensure the image is responsive */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+ .wrapper{
+  padding-top: 40px;
+ }
 
