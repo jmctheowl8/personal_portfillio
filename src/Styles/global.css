@@ -24,17 +24,33 @@
     flex-direction: column;
     height: calc(100vh - 60px); /* Adjust for navbar height */
     text-align: center;
-    padding-top: 60px; /* Adjust to avoid content being hidden behind navbar */
+   
+    margin-top: 900px;
   }
-  
+  /* Add padding to each section to ensure it scrolls correctly */
+section {
+  padding-top: 80px; /* Adjust based on your navbar height */
+  margin-top: -50px; /* Compensates for the padding added */
+}
+
   /* Heading styles */
   h1, h2, h3 {
     color: #116bab;
+    margin-bottom: 50px;
 
   }
+
+  p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: larger;
+    color: #000;
+  }
+  /* Add padding to each section to ensure it scrolls correctly */
+
   
   /* Ensure the image is responsive */
  .wrapper{
-  padding-top: 40px;
+  margin: 60px;
  }
 

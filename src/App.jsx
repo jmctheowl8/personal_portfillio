@@ -1,6 +1,9 @@
 import Navbar from "./compoents/Navbar/Navbar";
 import Hero from "./compoents/Hero/hero";
+import Skills from "./compoents/skills/skills";
 import About from "./compoents/About/about"
+import Contact from "./compoents/contact/contact";
+import Gallery from "./compoents/gallery/gallery";
 const App = () => {
   return (
     <div className="App">
@@ -9,29 +12,30 @@ const App = () => {
         <Hero />
 
         <div className="wrapper">
-          <section id="About" >
+          <section id='About'  >
+            <h1 >About</h1>
             <About />
           </section>
         </div>
         
         <div className="wrapper">
-          <section id="Skills">
-            <h1>Skills Section</h1>
-            <p>Learn more about us here.</p>
+          <section id='Skills'>
+            <h1>Skills</h1>
+            <Skills />
           </section>
         </div>
         
          <div className="wrapper">
-          <section id="gallery">
-            <h1>Gallrey  Section</h1>
-            <p>These are our services.</p>
+          <section id='gallery'>
+            <h1>Gallery section</h1>
+            <Gallery />
           </section>
          </div>
 
         <div className="wrapper">
-          <section id="contact">
-            <h1>Contact Section</h1>
-            <p>Contact us for more information.</p>
+          <section id='contact' >
+            <h1 > Contact</h1>
+            <Contact />
           </section>
         </div>
       

@@ -1,1 +1,49 @@
- 
+/* Gallery Container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Larger columns for bigger images */
+    gap: 30px; /* Increased spacing between images */
+    padding: 30px; /* Increased padding around the gallery */
+    max-width: 1200px; /* Optional: Limit the gallery width */
+    margin: 0 auto; /* Center the gallery horizontally */
+  }
+  
+  /* Individual Gallery Items */
+  .gallery-item {
+    position: relative; /* For hover effects */
+    overflow: hidden; /* Ensures hover effects don't overflow */
+    border-radius: 15px; /* Slightly larger rounded corners for images */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+  }
+  
+  /* Gallery Images */
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+  }
+  
+  /* Hover Effect for Images */
+  .gallery-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Optional: Add a Caption */
+  .gallery-item::after {
+    position: absolute;
+    bottom: 15px; /* Adjusted for larger images */
+    left: 15px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 16px; /* Slightly larger text */
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover::after {
+    opacity: 1; /* Show caption on hover */
+  }
+  
